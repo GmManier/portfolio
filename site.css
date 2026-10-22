@@ -302,12 +302,3 @@ footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; g
 
 /* 링크가 아직 없는 버튼 */
 .btn.is-empty { background: none; border: 1px dashed var(--border); color: var(--muted); cursor: default; pointer-events: none; }
-
-/* 숫자 표 (GA / GE) */
-.tbl-wrap { overflow-x: auto; }
-.tbl { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
-.tbl th, .tbl td { padding: 12px 16px; text-align: right; border-bottom: 1px solid var(--border); }
-.tbl th:first-child, .tbl td:first-child { text-align: left; }
-.tbl thead th { font-family: var(--head); font-size: 12px; letter-spacing: .12em; color: var(--muted); font-weight: 800; }
-.tbl tbody td { font-size: var(--fs-body); color: var(--soft); }
-.tbl tfoot td { font-size: var(--fs-body); font-weight: 700; color: var(--accent); border-bottom: 0; }
