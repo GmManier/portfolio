@@ -10,8 +10,8 @@ window.PORTFOLIO_VIDEOS = {
   wolha_ai:      'video/wolha_ai.mp4', // 월하일검 공용 AI 시연
   wolha_gas:     'video/wolha_gas.mp4', // 월하일검 GAS 전투 (패링·가드·피격)
   wolha_fx:      'video/wolha_fx.mp4', // 월하일검 전투 연출 (사운드·카메라 흔들림)
-  rolling_main:  'https://www.youtube.com/watch?v=5NVwIerlEGE', // 롤링레오 플레이 영상
-  rolling_gstar: 'https://www.youtube.com/watch?v=5NVwIerlEGE', // 롤링레오 지스타 2025 시연
+  rolling_main:  'video/rolling_main.mp4', // 롤링레오 플레이 영상
+  rolling_gstar: 'video/rolling_gstar.mp4', // 롤링레오 지스타 2025 시연
   unreal_ai:     '', // 언리얼 BT·State Tree AI 구현
   unity_shooting:'', // 유니티 슈팅 게임
   ai_tool:       ''  // AI 가중치 검증 툴 시연
