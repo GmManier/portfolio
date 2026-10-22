@@ -19,6 +19,9 @@ img[data-zoom] { cursor: zoom-in; }
 .vslot-play { width: 64px; height: 64px; border-radius: 50%; background: var(--accent); position: relative; box-shadow: 0 8px 30px rgba(0,0,0,.4); }
 .vslot-play::after { content: ''; position: absolute; left: 26px; top: 20px; border-left: 18px solid #fff; border-top: 12px solid transparent; border-bottom: 12px solid transparent; }
 .vslot.is-empty .vslot-play { background: rgba(255,255,255,.14); border: 1.5px dashed rgba(255,255,255,.6); }
+.vslot.is-image > img { opacity: 1; cursor: zoom-in; }
+.vslot.is-image:hover > img { opacity: 1; }
+.vslot-cap { position: absolute; left: 12px; bottom: 12px; font-size: 12px; font-weight: 700; padding: 4px 10px; background: rgba(0,0,0,.75); color: #fff; pointer-events: none; }
 .vslot-title { font-weight: 700; font-size: 17px; text-shadow: 0 2px 12px rgba(0,0,0,.6); }
 .vslot-note { font-size: 11px; letter-spacing: .14em; font-weight: 700; padding: 4px 10px; border-radius: 99px; background: rgba(0,0,0,.55); }
 

@@ -11,7 +11,7 @@ window.PORTFOLIO_VIDEOS = {
   wolha_gas:     'video/wolha_gas.mp4', // 월하일검 GAS 전투 (패링·가드·피격)
   wolha_fx:      'video/wolha_fx.mp4', // 월하일검 전투 연출 (사운드·카메라 흔들림)
   rolling_main:  'https://www.youtube.com/watch?v=5NVwIerlEGE', // 롤링레오 플레이 영상
-  rolling_gstar: '', // 롤링레오 지스타 2025 시연
+  rolling_gstar: 'https://www.youtube.com/watch?v=5NVwIerlEGE', // 롤링레오 지스타 2025 시연
   unreal_ai:     '', // 언리얼 BT·State Tree AI 구현
   unity_shooting:'', // 유니티 슈팅 게임
   ai_tool:       ''  // AI 가중치 검증 툴 시연
@@ -71,6 +71,14 @@ if (window.PORTFOLIO_VIDEO_EMBED === undefined) window.PORTFOLIO_VIDEO_EMBED = t
       var title = el.dataset.title || '영상';
       var poster = el.dataset.poster || '';
       el.classList.add('vslot');
+      /* 영상이 아직 없으면 대표 이미지를 그대로 보여 준다 (누르면 확대) */
+      if (!src && poster) {
+        el.classList.add('is-image');
+        el.innerHTML =
+          '<img src="' + poster + '" alt="' + title + '" loading="lazy" data-zoom data-cap="' + title + '">' +
+          '<span class="vslot-cap">' + title + '</span>';
+        return;
+      }
       if (!src) {
         el.classList.add('is-empty');
         el.innerHTML =
