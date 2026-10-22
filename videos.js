@@ -25,8 +25,8 @@ window.PORTFOLIO_VIDEOS = {
    - 비워 두면 버튼에 "링크 추가 예정" 표시
    ========================================================= */
 window.PORTFOLIO_LINKS = {
-  doc_common_ai:    '', // 공용 AI 기획서 [다크소울]
-  doc_common_skill: ''  // 공용 스킬 시스템 기획서 [POE2]
+  doc_common_ai:    'https://drive.google.com/file/d/1Oe7pmx7z3NS45E7q6PGRm5KzMtSKVerd/view?usp=sharing', // 공용 AI 기획서 [다크소울]
+  doc_common_skill: 'https://drive.google.com/file/d/1mqjli6nRlG2TJujcxHOu-XL41IVlTSpC/view?usp=sharing'  // 공용 스킬 시스템 기획서 [POE2]
 };
 
 /* 유튜브를 페이지 안에서 재생할지 (false = 유튜브 새 창으로 열기) */
