@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>월하일검 | 전윤재 포트폴리오</title>
+<meta name="description" content="월하일검 — 팀장 · 시스템 기획. 공용 AI, GAS 전투 시스템, 전투 연출 시스템 상세">
+<meta name="theme-color" content="#0c0c0d">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="index.html" class="logo">YJ<i>.</i></a>
+    <ul>
+      <li><a href="#work">한 일</a></li>
+      <li><a href="#team">팀장 업무</a></li>
+      <li><a href="#can">할 수 있는 것</a></li>
+    </ul>
+    <a class="btn" href="index.html#wolha">← 메인으로</a>
+  </div>
+</nav>
+
+<!-- ===== 개요 ===== -->
+<header class="detail-top">
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">메인</a><span>/</span><a href="index.html#projects">프로젝트</a><span>/</span><b>월하일검</b></div>
+    <div class="head">
+      <div class="lbl"><p class="eyebrow">Project 01 / Detail</p></div>
+      <h1 class="ttl big-title">WOLHA<br>ILGUM<span class="ko">월하일검</span></h1>
+      <div class="txt">
+        <div class="meta"><span>STEALTH ACTION</span><span>UNREAL ENGINE 5</span><span>팀 오클로스</span></div>
+        <dl class="pairs"><div><dt>컨셉</dt><dd>패링 연계로 적을 무너뜨리고, 잠입 · 암살로 처단</dd></div><div><dt>목표</dt><dd>익히기 쉬운 전투, 유저가 전략적으로 판단하는 진행</dd></div><div><dt>참고</dt><dd>세키로</dd></div></dl>
+      </div>
+    </div>
+    <div class="g12 info">
+      <div class="c3 box box-in"><small>개발 기간</small><b>2026.03 – 진행 중</b></div>
+      <div class="c3 box box-in"><small>개발 엔진</small><b>언리얼 5</b></div>
+      <div class="c3 box box-in"><small>팀 구성</small><b>기획 4 · 개발 2</b></div>
+      <div class="c3 box box-in"><small>담당</small><b>팀장 · 시스템 기획</b></div>
+    </div>
+    <div class="g12" style="margin-top:var(--g)">
+      <div class="c7 media" data-video="wolha_main" data-poster="img/wolha_05.jpg" data-title="월하일검 플레이 영상"></div>
+      <div class="c5 box box-in myrole">
+        <small>WHAT I DID</small>
+        <b>내가 맡은 일</b>
+        <ul class="done">
+          <li>공용 AI [적대 몬스터] 설계 — AI 유형 7종</li>
+          <li>GAS 기반 전투 시스템 설계 — 게임플레이 태그 42개</li>
+          <li>전투 연출 시스템 설계 — 몽타주 37개 적용</li>
+          <li>팀장 — 일정 · 업무 분배 · 회의 운영</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===== 한 일 ===== -->
+<section class="sec" id="work">
+  <div class="wrap">
+    <div class="head">
+      <div class="lbl"><p class="eyebrow">What I Did</p></div>
+      <h2 class="ttl t-h1">한 일.</h2>
+      <p class="txt t-body">작업마다 방향성 → 작업 → 결과 → 역량상승 순서로 정리했습니다.</p>
+    </div>
+
+    <!-- 작업 1 공용 AI -->
+    <article class="block-line" id="ai">
+      <div class="head">
+        <div class="lbl"><p class="eyebrow">Work 01 / Common AI</p></div>
+        <h3 class="ttl t-h2">공용 AI [적대 몬스터]</h3>
+        <dl class="pairs txt"><div><dt>문제</dt><dd>전략적 판단에는 행동이 다른 적이 필요</dd></div><div><dt>해결</dt><dd>State Tree · GAS · 데이터 테이블로 공용 AI 설계</dd></div></dl>
+      </div>
+      <div class="g12">
+        <div class="c7 media" data-video="wolha_ai" data-poster="img/s09_01.jpg" data-title="공용 AI 시연"></div>
+        <div class="c5 statcard"><span class="lab">RESULT</span><div class="num">7<small>종</small></div><p>공용 AI 하나로 만든 AI 유형</p></div>
+      </div>
+      <div class="g12 flow4">
+        <div class="c3 box box-in"><span class="k">작업 방향성</span><p class="t-detail">전투는 익히기 쉽고, 게임 진행은 유저가 전략적으로 판단하는 잠입 액션 게임을 목표로 했습니다.</p></div>
+        <div class="c3 box box-in"><span class="k">작업</span><p class="t-detail">행동 패턴이 다른 AI가 필요해, 하나의 구조로 여러 AI를 만드는 공용 AI를 State Tree, GAS, 데이터 테이블로 제작했습니다.</p></div>
+        <div class="c3 box box-in res"><span class="k">결과</span><p class="t-detail">공용 AI로 AI 유형 7종을 제작했고, 유형을 조합해 레벨에서 다양한 선택지를 제공했습니다.</p></div>
+        <div class="c3 box box-in"><span class="k">역량상승</span><p class="t-detail">State Tree 이해도와 숙련도가 상승했고, 데이터 테이블을 설계 · 관리하는 역량을 쌓았습니다.</p></div>
+      </div>
+      <div class="box box-in diagram">
+        <div class="diagram-head"><h5>공용 AI 구조</h5><span class="t-detail">세 요소를 조합해 하나의 구조로 여러 AI 유형을 만든다</span></div>
+        <div class="dg-row">
+          <div class="nodes">
+            <div class="node"><b>State Tree</b><span class="t-detail">행동 흐름</span></div>
+            <div class="node"><b>GAS</b><span class="t-detail">능력 · 상태</span></div>
+            <div class="node"><b>데이터 테이블</b><span class="t-detail">유형별 수치</span></div>
+          </div>
+          <div class="arrow">→</div>
+          <div class="node acc"><b>공용 AI</b><span class="t-detail">하나의 구조</span></div>
+          <div class="arrow">→</div>
+          <div class="node fill"><b>AI 유형 7종</b><span class="t-detail">레벨에서 조합 → 다양한 선택지</span></div>
+        </div>
+      </div>
+      <div class="captures-head"><b>WORK CAPTURES</b><span class="t-detail">클릭하면 크게 볼 수 있습니다</span></div>
+      <div class="g12 captures" data-gal="ai">
+        <figure class="c3 cap"><img src="img/s09_02.jpg" data-zoom data-cap="공용 AI State Tree" alt="" loading="lazy"><figcaption>State Tree 구성</figcaption></figure>
+        <figure class="c3 cap"><img src="img/s09_03.jpg" data-zoom data-cap="AI 유형별 블루프린트" alt="" loading="lazy"><figcaption>AI 유형별 블루프린트</figcaption></figure>
+        <figure class="c3 cap"><img src="img/s09_05.jpg" data-zoom data-cap="AI 데이터 테이블" alt="" loading="lazy"><figcaption>데이터 테이블</figcaption></figure>
+        <figure class="c3 cap"><img src="img/s09_04.jpg" data-zoom data-cap="가중치 값" alt="" loading="lazy"><figcaption>가중치 값</figcaption></figure>
+        <figure class="c3 cap"><img src="img/s09_07.jpg" data-zoom data-cap="기획서 · 타겟 선정 → 발각도" alt="" loading="lazy"><figcaption>기획서 · 발각도</figcaption></figure>
+        <figure class="c3 cap"><img src="img/s09_08.jpg" data-zoom data-cap="기획서 · 시야 감지" alt="" loading="lazy"><figcaption>기획서 · 시야 감지</figcaption></figure>
+        <figure class="c3 cap"><img src="img/s09_09.jpg" data-zoom data-cap="기획서 · 타겟 공유 → 유언" alt="" loading="lazy"><figcaption>기획서 · 타겟 공유</figcaption></figure>
+        <figure class="c3 cap"><img src="img/s09_10.jpg" data-zoom data-cap="기획서 · 소실 시 행동" alt="" loading="lazy"><figcaption>기획서 · 소실 시 행동</figcaption></figure>
+      </div>
+    </article>
+
+    <!-- 작업 2 GAS -->
+    <article class="block-line" id="gas">
+      <div class="head">
+        <div class="lbl"><p class="eyebrow">Work 02 / GAS Combat</p></div>
+        <h3 class="ttl t-h2">GAS 기반 전투 시스템</h3>
+        <dl class="pairs txt"><div><dt>문제</dt><dd>규칙을 고칠 때마다 드는 개발 비용</dd></div><div><dt>해결</dt><dd>GAS · 게임플레이 태그로 상태 · 이벤트 정의</dd></div></dl>
+      </div>
+      <div class="g12">
+        <div class="c7 media" data-video="wolha_gas" data-poster="img/s10_01.jpg" data-title="패링 · 가드 · 피격 시연"></div>
+        <div class="c5 statcard"><span class="lab">RESULT</span><div class="num">42<small>개</small></div><p>정의하고 사용한 게임플레이 태그</p></div>
+      </div>
+      <div class="g12 flow4">
+        <div class="c3 box box-in"><span class="k">작업 방향성</span><p class="t-detail">전투 시스템의 규칙을 수정하거나 추가할 때 개발 비용을 최소화하는 것이 목표였습니다.</p></div>
+        <div class="c3 box box-in"><span class="k">작업</span><p class="t-detail">GAS와 게임플레이 태그로 전투 상태와 패링 · 가드 · 피격 같은 전투 이벤트를 정의하고, 태그로 전투 규칙을 적용했습니다.</p></div>
+        <div class="c3 box box-in res"><span class="k">결과</span><p class="t-detail">추가 구현 없이 상태 전이 규칙과 밸런스를 수정할 수 있었습니다. 42개의 태그를 정의하고 사용했습니다.</p></div>
+        <div class="c3 box box-in"><span class="k">역량상승</span><p class="t-detail">GAS라는 언리얼 기능을 학습했고 전투 시스템을 기획하는 역량을 쌓았습니다.</p></div>
+      </div>
+      <div class="box box-in diagram">
+        <div class="diagram-head"><h5>전투 상태 전이도</h5><span class="t-detail">상자 = 게임플레이 태그 · 화살표 = 전이 조건 · ↺ 끝나면 전투 대기로 복귀</span></div>
+        <div class="svgwrap">
+          <svg viewBox="0 0 520 590" role="img" aria-label="전투 상태 전이도">
+            <defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="context-stroke"/></marker></defs>
+            <style>
+              .sv-b{fill:#1b1b1e;stroke-width:1.5}.sv-n{stroke:#c9c9cb}.sv-d{stroke:#5ec2a0}.sv-h{stroke:#F9423A}
+              .sv-t{fill:#f3f2ed;font:700 14px SCDream,sans-serif;text-anchor:middle}
+              .sv-g{fill:#8f8f94;font:400 10.5px monospace;text-anchor:middle}
+              .sv-l{fill:none;stroke-width:1.6;marker-end:url(#ah)}
+              .sv-e{fill:#c9c9cb;font:300 11.5px SCDream,sans-serif}
+              .sv-r{fill:#5ec2a0;font:700 13px sans-serif}
+            </style>
+            <rect class="sv-b sv-n" x="185" y="16" width="150" height="56" rx="8"/><text class="sv-t" x="260" y="41">전투 대기</text><text class="sv-g" x="260" y="59">Battle.Ready</text>
+            <rect class="sv-b sv-n" x="20" y="150" width="150" height="56" rx="8"/><text class="sv-t" x="95" y="175">공격</text><text class="sv-g" x="95" y="193">Battle.Attacking</text>
+            <rect class="sv-b sv-d" x="350" y="150" width="150" height="56" rx="8"/><text class="sv-t" x="425" y="175">패리 창</text><text class="sv-g" x="425" y="193">Defense.ParryWindow</text>
+            <rect class="sv-b sv-h" x="20" y="276" width="150" height="56" rx="8"/><text class="sv-t" x="95" y="301">패리당함</text><text class="sv-g" x="95" y="319">Condition.Parried</text><text class="sv-r" x="158" y="290">↺</text>
+            <rect class="sv-b sv-n" x="185" y="276" width="150" height="56" rx="8"/><text class="sv-t" x="260" y="301">피격 판정</text><text class="sv-g" x="260" y="319">Battle.HitPending</text><text class="sv-r" x="323" y="290">↺</text>
+            <rect class="sv-b sv-d" x="350" y="276" width="150" height="56" rx="8"/><text class="sv-t" x="425" y="301">가드</text><text class="sv-g" x="425" y="319">Defense.Active</text><text class="sv-r" x="488" y="290">↺</text>
+            <rect class="sv-b sv-h" x="185" y="400" width="150" height="56" rx="8"/><text class="sv-t" x="260" y="425">스턴</text><text class="sv-g" x="260" y="443">Stun.Stunned</text><text class="sv-r" x="323" y="414">↺</text>
+            <rect class="sv-b sv-h" x="350" y="400" width="150" height="56" rx="8"/><text class="sv-t" x="425" y="425">사망</text><text class="sv-g" x="425" y="443">Condition.Dead</text>
+            <rect class="sv-b sv-h" x="185" y="516" width="150" height="56" rx="8"/><text class="sv-t" x="260" y="541">처형당함</text><text class="sv-g" x="260" y="559">Condition.BeingExecuted</text>
+            <path class="sv-l" stroke="#c9c9cb" d="M215,72 L110,148"/><text class="sv-e" x="96" y="108">공격 시작</text>
+            <path class="sv-l" stroke="#5ec2a0" d="M305,72 L410,148"/><text class="sv-e" x="372" y="108">가드 입력</text>
+            <path class="sv-l" stroke="#c9c9cb" d="M260,72 L260,274"/><text class="sv-e" x="254" y="244" text-anchor="end">Combat.Hit 수신</text>
+            <path class="sv-l" stroke="#F9423A" d="M95,206 L95,274"/><text class="sv-e" x="87" y="245" text-anchor="end">상대가 패리</text>
+            <path class="sv-l" stroke="#5ec2a0" d="M425,206 L425,274"/><text class="sv-e" x="433" y="245">창 종료</text>
+            <path class="sv-l" stroke="#F9423A" d="M260,332 L260,398"/><text class="sv-e" x="268" y="370">게이지 ≥ 최대</text>
+            <path class="sv-l" stroke="#F9423A" d="M318,332 L392,398"/><text class="sv-e" x="362" y="356">체력 0</text>
+            <path class="sv-l" stroke="#F9423A" d="M260,456 L260,514"/><text class="sv-e" x="268" y="490">처형 시작</text>
+            <path class="sv-l" stroke="#F9423A" d="M335,544 C410,544 425,500 425,458"/><text class="sv-e" x="372" y="572">연출 끝</text>
+          </svg>
+        </div>
+      </div>
+      <div class="captures-head"><b>WORK CAPTURES</b><span class="t-detail">클릭하면 크게 볼 수 있습니다</span></div>
+      <div class="g12 captures" data-gal="gas">
+        <figure class="c3 cap"><img src="img/s10_06.jpg" data-zoom data-cap="게임플레이 태그 정의" alt="" loading="lazy"><figcaption>게임플레이 태그 정의</figcaption></figure>
+        <figure class="c3 cap"><img src="img/s10_07.jpg" data-zoom data-cap="GA · GE 에셋" alt="" loading="lazy"><figcaption>GA · GE 에셋</figcaption></figure>
+        <figure class="c3 cap"><img src="img/s10_03.jpg" data-zoom data-cap="전투 데이터 테이블" alt="" loading="lazy"><figcaption>전투 데이터 테이블</figcaption></figure>
+        <figure class="c3 cap"><img src="img/s10_04.jpg" data-zoom data-cap="GAS 설정" alt="" loading="lazy"><figcaption>GAS 설정</figcaption></figure>
+      </div>
+    </article>
+
+    <!-- 작업 3 연출 -->
+    <article class="block-line" id="fx">
+      <div class="head">
+        <div class="lbl"><p class="eyebrow">Work 03 / Combat Feedback</p></div>
+        <h3 class="ttl t-h2">전투 연출 시스템</h3>
+        <dl class="pairs txt"><div><dt>목표</dt><dd>액션을 시각 · 청각으로 바로 피드백</dd></div><div><dt>해결</dt><dd>사운드 · 카메라 흔들림 연출 시스템 설계</dd></div></dl>
+      </div>
+      <div class="g12">
+        <div class="c7 media" data-video="wolha_fx" data-poster="img/s08_05.jpg" data-title="전투 연출 시연"></div>
+        <div class="c5 statcard"><span class="lab">RESULT</span><div class="num">37<small>개</small></div><p>사운드 · 카메라 흔들림을 적용한 몽타주</p></div>
+      </div>
+      <div class="g12 flow4">
+        <div class="c3 box box-in"><span class="k">작업 방향성</span><p class="t-detail">유저가 액션을 받아들일 때 시각, 청각으로 바로 피드백을 받을 수 있게 하는 것을 목표로 했습니다.</p></div>
+        <div class="c3 box box-in"><span class="k">작업</span><p class="t-detail">전투 퀄리티를 높이기 위해 사운드와 카메라 흔들림 같은 연출 시스템을 설계하고 전투에 적용했습니다.</p></div>
+        <div class="c3 box box-in res"><span class="k">결과</span><p class="t-detail">37개의 몽타주에 사운드, 카메라 흔들림을 적용했습니다.</p></div>
+        <div class="c3 box box-in"><span class="k">역량상승</span><p class="t-detail">전투 연출, 액션감의 이해도가 상승했고 데이터 테이블을 설계 · 관리하는 역량을 쌓았습니다.</p></div>
+      </div>
+      <div class="captures-head"><b>WORK CAPTURES</b><span class="t-detail">클릭하면 크게 볼 수 있습니다</span></div>
+      <div class="g12 captures" data-gal="fx">
+        <figure class="c3 cap"><img src="img/s11_01.jpg" data-zoom data-cap="몽타주 노티파이" alt="" loading="lazy"><figcaption>몽타주 노티파이</figcaption></figure>
+        <figure class="c3 cap"><img src="img/s11_02.jpg" data-zoom data-cap="카메라 흔들림" alt="" loading="lazy"><figcaption>카메라 흔들림</figcaption></figure>
+        <figure class="c3 cap"><img src="img/s11_03.jpg" data-zoom data-cap="연출 데이터 테이블" alt="" loading="lazy"><figcaption>연출 데이터 테이블</figcaption></figure>
+        <figure class="c3 cap"><img src="img/s11_05.jpg" data-zoom data-cap="연출 시스템 데이터 구조 문서" alt="" loading="lazy"><figcaption>데이터 구조 문서</figcaption></figure>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ===== 팀장 업무 ===== -->
+<section class="sec" id="team">
+  <div class="wrap">
+    <div class="head">
+      <div class="lbl"><p class="eyebrow">Collaboration &amp; Leadership</p></div>
+      <h2 class="ttl t-h1">팀장 업무.</h2>
+      <dl class="pairs txt"><div><dt>운영</dt><dd>일정 · 업무 분배 · 회의</dd></div><div><dt>환경</dt><dd>Discord · Notion 협업 환경 구축</dd></div></dl>
+    </div>
+    <div class="g12">
+      <div class="c4 box box-in role-card"><span class="n">01 / 직접 설계</span><h3 class="t-h2">시스템 기획</h3><p class="t-detail">공용 AI, GAS 전투 시스템, 연출 시스템을 설계했습니다.</p></div>
+      <div class="c4 box box-in role-card"><span class="n">02 / 팀 운영</span><h3 class="t-h2">일정 · 업무 관리</h3><p class="t-detail">팀장으로 일정, 업무 분배, 회의를 운영했습니다.</p></div>
+      <div class="c4 box box-in role-card"><span class="n">03 / 협업 환경</span><h3 class="t-h2">Discord · Notion</h3><p class="t-detail">파트별 채널과 기획서 · 버그 관리 문서로 협업 환경을 구축했습니다.</p></div>
+    </div>
+    <div class="g12" style="margin-top:var(--g)">
+      <div class="c6 box box-in">
+        <span class="ref">DISCORD</span>
+        <h3 class="t-h2" style="margin:8px 0">파트별 채널 구성</h3>
+        <div class="kws"><span>기획_문서</span><span>일반몬스터_ai_플밍</span><span>플레이어_플밍</span><span>회의록</span><span>일정</span><span>bp_common</span><span>레벨</span><span>에셋</span><span>버그-목록</span></div>
+      </div>
+      <div class="c6 box box-in">
+        <span class="ref">NOTION</span>
+        <h3 class="t-h2" style="margin:8px 0">기획서 · 버그 관리</h3>
+        <ul class="done">
+          <li>팀프로젝트 기획서 데이터베이스</li>
+          <li>버그 트래커 — 속성 14개, 보기 6개, 템플릿</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 할 수 있는 것 ===== -->
+<section class="sec" id="can">
+  <div class="wrap">
+    <div class="head">
+      <div class="lbl"><p class="eyebrow">What I Can Do</p></div>
+      <h2 class="ttl t-h1">할 수 있는 것.</h2>
+      <p class="txt t-body">월하일검에서 직접 해 본 일을 기준으로 정리했습니다.</p>
+    </div>
+    <div class="g12 can">
+      <div class="c3 box box-in"><span class="n">01 / AI</span><b>재사용 가능한 공용 AI 구조 설계</b><p class="t-detail">State Tree · GAS · 데이터 테이블</p></div>
+      <div class="c3 box box-in"><span class="n">02 / COMBAT</span><b>태그 기반 전투 상태 · 규칙 정의</b><p class="t-detail">GAS · 게임플레이 태그 · 상태 전이</p></div>
+      <div class="c3 box box-in"><span class="n">03 / FEEDBACK</span><b>몽타주 단위 전투 연출 설계</b><p class="t-detail">사운드 · 카메라 흔들림 · 데이터 테이블</p></div>
+      <div class="c3 box box-in"><span class="n">04 / LEAD</span><b>팀 일정 · 업무 · 협업 환경 운영</b><p class="t-detail">회의 · 업무 분배 · Discord · Notion</p></div>
+    </div>
+  </div>
+</section>
+
+<nav class="pager" aria-label="페이지 이동">
+  <div class="wrap g12">
+    <a class="c6" href="index.html#wolha"><small>← BACK</small><b>메인으로</b></a>
+    <a class="c6 next" href="rolling.html"><small>NEXT PROJECT →</small><b>롤링레오</b></a>
+  </div>
+</nav>
+<footer><div class="wrap"><span>JEON YUNJAE · SYSTEM DESIGNER</span><span>월하일검 상세</span></div></footer>
+
+<script src="videos.js"></script>
+</body>
+</html>

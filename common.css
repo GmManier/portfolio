@@ -1,0 +1,36 @@
+/* 시안 1·2 공용: 폰트 · 영상 칸 · 이미지 확대 */
+@font-face { font-family: 'SCDream'; font-weight: 300; font-display: swap; src: url('fonts/SCDream3.otf') format('opentype'); }
+@font-face { font-family: 'SCDream'; font-weight: 400; font-display: swap; src: url('fonts/SCDream4.otf') format('opentype'); }
+@font-face { font-family: 'SCDream'; font-weight: 700; font-display: swap; src: url('fonts/SCDream6.otf') format('opentype'); }
+@font-face { font-family: 'SCDream'; font-weight: 900; font-display: swap; src: url('fonts/SCDream9.otf') format('opentype'); }
+
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; display: block; }
+img[data-zoom] { cursor: zoom-in; }
+
+/* 영상 칸 */
+.vslot { position: relative; aspect-ratio: 16 / 9; overflow: hidden; background: #000; border-radius: inherit; }
+.vslot > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .55; transition: opacity .3s, transform .6s; }
+.vslot:hover > img { opacity: .7; transform: scale(1.02); }
+.vslot iframe, .vslot video { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.vslot-ui { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px;
+  background: none; border: 0; color: #fff; font: inherit; cursor: pointer; text-align: center; padding: 16px; }
+.vslot.is-empty .vslot-ui { cursor: default; }
+.vslot-play { width: 64px; height: 64px; border-radius: 50%; background: var(--accent); position: relative; box-shadow: 0 8px 30px rgba(0,0,0,.4); }
+.vslot-play::after { content: ''; position: absolute; left: 26px; top: 20px; border-left: 18px solid #fff; border-top: 12px solid transparent; border-bottom: 12px solid transparent; }
+.vslot.is-empty .vslot-play { background: rgba(255,255,255,.14); border: 1.5px dashed rgba(255,255,255,.6); }
+.vslot-title { font-weight: 700; font-size: 17px; text-shadow: 0 2px 12px rgba(0,0,0,.6); }
+.vslot-note { font-size: 11px; letter-spacing: .14em; font-weight: 700; padding: 4px 10px; border-radius: 99px; background: rgba(0,0,0,.55); }
+
+/* 이미지 확대 */
+.lb { position: fixed; inset: 0; z-index: 100; background: rgba(5,5,6,.94); display: none; align-items: center; justify-content: center; padding: 56px 64px; }
+.lb.on { display: flex; }
+.lb figure { margin: 0; max-width: 100%; max-height: 100%; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.lb img { max-height: calc(100vh - 150px); width: auto; object-fit: contain; border-radius: 6px; }
+.lb figcaption { color: #ddd; font-size: 14px; text-align: center; }
+.lb button { position: absolute; background: rgba(255,255,255,.08); color: #fff; border: 0; width: 48px; height: 48px; border-radius: 50%; font-size: 28px; line-height: 1; cursor: pointer; }
+.lb button:hover { background: var(--accent); }
+.lb-x { top: 16px; right: 16px; }
+.lb-prev { left: 12px; top: 50%; transform: translateY(-50%); }
+.lb-next { right: 12px; top: 50%; transform: translateY(-50%); }
+@media (max-width: 640px) { .lb { padding: 56px 8px; } .lb-prev, .lb-next { top: auto; bottom: 12px; transform: none; } }
