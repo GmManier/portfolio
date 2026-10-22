@@ -6,7 +6,7 @@
    - 비워 두면 대표 이미지 + "영상 추가 예정" 표시
    ========================================================= */
 window.PORTFOLIO_VIDEOS = {
-  wolha_main:    'video/wolha_main.mp4', // 월하일검 대표 플레이 영상
+  wolha_main:    'https://www.youtube.com/watch?v=MVOr8xTqBFc', // 월하일검 대표 플레이 영상
   wolha_ai:      'video/wolha_ai.mp4', // 월하일검 공용 AI 시연
   wolha_gas:     'video/wolha_gas.mp4', // 월하일검 GAS 전투 (패링·가드·피격)
   wolha_fx:      'video/wolha_fx.mp4', // 월하일검 전투 연출 (사운드·카메라 흔들림)
