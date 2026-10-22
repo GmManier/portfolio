@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>월하일검 | 전윤재 포트폴리오</title>
-<meta name="description" content="월하일검 — 팀장 · 시스템 기획. 공용 AI, GAS 전투 시스템, 전투 연출 시스템 상세">
+<meta name="description" content="월하일검 — 팀장 · 시스템 기획. 공용 AI, GAS 스킬 제작 파이프라인, 전투 연출 시스템 상세">
 <meta name="theme-color" content="#0c0c0d">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,7 +51,7 @@
         <b>내가 맡은 일</b>
         <ul class="done">
           <li>공용 AI [적대 몬스터] 설계 — AI 유형 7종</li>
-          <li>GAS 기반 전투 시스템 설계 — 게임플레이 태그 42개</li>
+          <li>GAS 스킬 제작 파이프라인 기획 — 팀이 스킬 · 규칙 176개 제작</li>
           <li>전투 연출 시스템 설계 — 몽타주 37개 적용</li>
           <li>팀장 — 일정 · 업무 분배 · 회의 운영</li>
         </ul>
@@ -117,18 +117,32 @@
     <article class="block-line" id="gas">
       <div class="head">
         <div class="lbl"><p class="eyebrow">Work 02 / GAS Combat</p></div>
-        <h3 class="ttl t-h2">GAS 기반 전투 시스템</h3>
-        <dl class="pairs txt"><div><dt>문제</dt><dd>규칙을 고칠 때마다 드는 개발 비용</dd></div><div><dt>해결</dt><dd>GAS · 게임플레이 태그로 상태 · 이벤트 정의</dd></div></dl>
+        <h3 class="ttl t-h2">GAS 스킬 제작 파이프라인</h3>
+        <dl class="pairs txt"><div><dt>문제</dt><dd>규칙을 고칠 때마다 드는 개발 비용</dd></div><div><dt>해결</dt><dd>태그를 조합해 스킬 · 규칙을 만드는 파이프라인 기획</dd></div></dl>
       </div>
       <div class="g12">
         <div class="c7 media" data-video="wolha_gas" data-poster="img/s10_01.jpg" data-title="패링 · 가드 · 피격 시연"></div>
-        <div class="c5 statcard"><span class="lab">RESULT</span><div class="num">42<small>개</small></div><p>정의하고 사용한 게임플레이 태그</p></div>
+        <div class="c5 statcard"><span class="lab">RESULT</span><div class="num">176<small>개</small></div><p>파이프라인으로 팀이 만든 스킬 101 · 규칙 75</p></div>
       </div>
       <div class="g12 flow4">
         <div class="c3 box box-in"><span class="k">작업 방향성</span><p class="t-detail">전투 시스템의 규칙을 수정하거나 추가할 때 개발 비용을 최소화하는 것이 목표였습니다.</p></div>
-        <div class="c3 box box-in"><span class="k">작업</span><p class="t-detail">GAS와 게임플레이 태그로 전투 상태와 패링 · 가드 · 피격 같은 전투 이벤트를 정의하고, 태그로 전투 규칙을 적용했습니다.</p></div>
-        <div class="c3 box box-in res"><span class="k">결과</span><p class="t-detail">추가 구현 없이 상태 전이 규칙과 밸런스를 수정할 수 있었습니다. 42개의 태그를 정의하고 사용했습니다.</p></div>
+        <div class="c3 box box-in"><span class="k">작업</span><p class="t-detail">GAS와 게임플레이 태그로 전투 상태와 패링 · 가드 · 피격 이벤트를 정의하고, 태그를 조합해 스킬과 규칙을 만드는 제작 파이프라인을 기획했습니다.</p></div>
+        <div class="c3 box box-in res"><span class="k">결과</span><p class="t-detail">팀원이 이 파이프라인으로 스킬(GA) 101개, 규칙(GE) 75개를 만들었고, 추가 구현 없이 상태 전이 규칙과 밸런스를 수정할 수 있었습니다.</p></div>
         <div class="c3 box box-in"><span class="k">역량상승</span><p class="t-detail">GAS라는 언리얼 기능을 학습했고 전투 시스템을 기획하는 역량을 쌓았습니다.</p></div>
+      </div>
+      <div class="box box-in diagram">
+        <div class="diagram-head"><h5>파이프라인으로 만든 스킬 · 규칙</h5><span class="t-detail">파이프라인 기획은 내가, 스킬 · 규칙 제작은 팀원이 진행</span></div>
+        <div class="tbl-wrap">
+          <table class="tbl">
+            <thead><tr><th>구분</th><th>스킬 (GA)</th><th>규칙 (GE)</th></tr></thead>
+            <tbody>
+              <tr><td>AI (몹)</td><td>77</td><td>58</td></tr>
+              <tr><td>플레이어</td><td>21</td><td>5</td></tr>
+              <tr><td>공용</td><td>3</td><td>12</td></tr>
+            </tbody>
+            <tfoot><tr><td>합계</td><td>101</td><td>75</td></tr></tfoot>
+          </table>
+        </div>
       </div>
       <div class="box box-in diagram">
         <div class="diagram-head"><h5>전투 상태 전이도</h5><span class="t-detail">상자 = 게임플레이 태그 · 화살표 = 전이 조건 · ↺ 끝나면 전투 대기로 복귀</span></div>
@@ -210,7 +224,7 @@
       <dl class="pairs txt"><div><dt>운영</dt><dd>일정 · 업무 분배 · 회의</dd></div><div><dt>환경</dt><dd>Discord · Notion 협업 환경 구축</dd></div></dl>
     </div>
     <div class="g12">
-      <div class="c4 box box-in role-card"><span class="n">01 / 직접 설계</span><h3 class="t-h2">시스템 기획</h3><p class="t-detail">공용 AI, GAS 전투 시스템, 연출 시스템을 설계했습니다.</p></div>
+      <div class="c4 box box-in role-card"><span class="n">01 / 직접 설계</span><h3 class="t-h2">시스템 기획</h3><p class="t-detail">공용 AI, GAS 스킬 제작 파이프라인, 연출 시스템을 설계했습니다.</p></div>
       <div class="c4 box box-in role-card"><span class="n">02 / 팀 운영</span><h3 class="t-h2">일정 · 업무 관리</h3><p class="t-detail">팀장으로 일정, 업무 분배, 회의를 운영했습니다.</p></div>
       <div class="c4 box box-in role-card"><span class="n">03 / 협업 환경</span><h3 class="t-h2">Discord · Notion</h3><p class="t-detail">파트별 채널과 기획서 · 버그 관리 문서로 협업 환경을 구축했습니다.</p></div>
     </div>
@@ -242,7 +256,7 @@
     </div>
     <div class="g12 can">
       <div class="c3 box box-in"><span class="n">01 / AI</span><b>재사용 가능한 공용 AI 구조 설계</b><p class="t-detail">State Tree · GAS · 데이터 테이블</p></div>
-      <div class="c3 box box-in"><span class="n">02 / COMBAT</span><b>태그 기반 전투 상태 · 규칙 정의</b><p class="t-detail">GAS · 게임플레이 태그 · 상태 전이</p></div>
+      <div class="c3 box box-in"><span class="n">02 / COMBAT</span><b>태그로 스킬 · 규칙을 만드는 제작 파이프라인 기획</b><p class="t-detail">GAS · 게임플레이 태그 · GA / GE</p></div>
       <div class="c3 box box-in"><span class="n">03 / FEEDBACK</span><b>몽타주 단위 전투 연출 설계</b><p class="t-detail">사운드 · 카메라 흔들림 · 데이터 테이블</p></div>
       <div class="c3 box box-in"><span class="n">04 / LEAD</span><b>팀 일정 · 업무 · 협업 환경 운영</b><p class="t-detail">회의 · 업무 분배 · Discord · Notion</p></div>
     </div>
