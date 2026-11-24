@@ -6,7 +6,8 @@
    - 비워 두면 대표 이미지 + "영상 추가 예정" 표시
    ========================================================= */
 window.PORTFOLIO_VIDEOS = {
-  wolha_main:    'video/wolha_main.mp4', // 월하일검 대표 플레이 영상
+  wolha_trailer: 'video/wolha_trailer.mp4', // 월하일검 트레일러 (메인 대표 영상, 원본 유튜브 h8IGkNKCJm0)
+  wolha_main:    'video/wolha_main.mp4', // 월하일검 플레이 영상 (상세 페이지)
   wolha_ai:      'video/wolha_ai.mp4', // 월하일검 공용 AI 시연
   wolha_gas:     'video/wolha_gas.mp4', // 월하일검 GAS 전투 (패링·가드·피격)
   wolha_fx:      'video/wolha_fx.mp4', // 월하일검 전투 연출 (사운드·카메라 흔들림)
@@ -26,7 +27,8 @@ window.PORTFOLIO_VIDEOS = {
    ========================================================= */
 window.PORTFOLIO_LINKS = {
   doc_common_ai:    'https://drive.google.com/file/d/1Oe7pmx7z3NS45E7q6PGRm5KzMtSKVerd/view?usp=sharing', // 공용 AI 기획서 [다크소울]
-  doc_common_skill: 'https://drive.google.com/file/d/1mqjli6nRlG2TJujcxHOu-XL41IVlTSpC/view?usp=sharing'  // 공용 스킬 시스템 기획서 [POE2]
+  doc_common_skill: 'https://drive.google.com/file/d/1mqjli6nRlG2TJujcxHOu-XL41IVlTSpC/view?usp=sharing', // 공용 스킬 시스템 기획서 [POE2]
+  build_wolha:      'https://drive.google.com/file/d/102qhWu8nrfdrnwtdhRZ-nYW1EyHpedfe/view?usp=drive_link' // 월하일검 빌드 zip (참고용)
 };
 
 /* 유튜브를 페이지 안에서 재생할지 (false = 유튜브 새 창으로 열기) */
